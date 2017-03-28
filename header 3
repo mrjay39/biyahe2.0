@@ -1,0 +1,205 @@
+$(function() {
+
+    //Wait for Pinegrow to wake-up
+    $("body").one("pinegrow-ready", function(e, pinegrow) {
+
+        //Create new Pinegrow framework object
+        var f = new PgFramework("header 3", "header 3");
+
+        //This will prevent activating multiple versions of this framework being loaded
+        f.type = "header 3";
+        f.allow_single_type = true;
+        f.user_lib = true
+
+        var comp_comp1 = new PgComponentType('comp1', 'Comp 1 / Header 1');
+        comp_comp1.code = '<header id="header-1" class="soft-scroll header-1" data-pg-collapsed>\
+    <!-- Navbar -->\
+    <nav class="main-nav navbar-fixed-top headroom headroom--pinned">\
+        <div class="container">\
+            <!-- Brand and toggle -->\
+            <div class="navbar-header">\
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">\
+                    <span class="sr-only">Toggle navigation</span>\
+                    <span class="icon-bar"></span>\
+                    <span class="icon-bar"></span>\
+                    <span class="icon-bar"></span>\
+                </button>\
+                <a href="#">\
+                    <img src="images/biyahe-logo.png" class="brand-img img-responsive">\
+                </a>\
+            </div>\
+            <!-- Navigation -->\
+            <div class="collapse navbar-collapse">\
+                <ul class="nav navbar-nav navbar-right">\
+                    <li class="active nav-item">\
+                        <a href="#biyaheUsers">Biyahe Users</a>\
+                    </li>\
+                    <li class="nav-item">\
+                        <a href="#clientUsers">Client Users</a>\
+                    </li>\
+                    <li class="nav-item">\
+                        <a id="" href="#utilities">Utilities</a>\
+                    </li>\
+                    <li class="nav-item dropdown">\
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Pages <i class="fa fa-angle-down"></i></a>\
+                        <ul class="dropdown-menu">\
+                            <li>\
+                                <a href="#">Dropdown 1</a>\
+                            </li>\
+                            <li>\
+                                <a href="#">Dropdown 2</a>\
+                            </li>\
+                            <li>\
+                                <a href="#">Dropdown 3</a>\
+                            </li>\
+                            <li>\
+                                <a href="#">Dropdown 4</a>\
+                            </li>\
+                        </ul>\
+                    </li>\
+                    <!--//dropdown-->\
+                    <li class="nav-item">\
+                        <a href="#">Contact</a>\
+                    </li>\
+                </ul>\
+                <!--//nav-->\
+            </div>\
+            <!--// End Navigation -->\
+        </div>\
+        <!--// End Container -->\
+    </nav>\
+    <!--// End Navbar -->\
+</header>';
+        comp_comp1.parent_selector = 'body';
+        f.addComponentType(comp_comp1);
+        
+        var comp_comp2 = new PgComponentType('comp2', 'Comp 2 / Header 1');
+        comp_comp2.code = '<header id="header-1" class="soft-scroll header-1" data-pg-collapsed>\
+    <!-- Navbar -->\
+    <nav class="main-nav navbar-fixed-top headroom headroom--pinned">\
+        <div class="container">\
+            <!-- Brand and toggle -->\
+            <div class="navbar-header">\
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">\
+                    <span class="sr-only">Toggle navigation</span>\
+                    <span class="icon-bar"></span>\
+                    <span class="icon-bar"></span>\
+                    <span class="icon-bar"></span>\
+                </button>\
+                <a href="#">\
+                    <img src="images/biyahe-logo.png" class="brand-img img-responsive">\
+                </a>\
+            </div>\
+            <!-- Navigation -->\
+            <div class="collapse navbar-collapse">\
+                <ul class="nav navbar-nav navbar-right">\
+                    <li class="active nav-item">\
+                        <a href="#biyaheUsers">Biyahe Users</a>\
+                    </li>\
+                    <li class="nav-item">\
+                        <a href="#clientUsers">Client Users</a>\
+                    </li>\
+                    <li class="nav-item">\
+                        <a id="" href="#utilities">Utilities</a>\
+                    </li>\
+                    <li class="nav-item dropdown">\
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Pages <i class="fa fa-angle-down"></i></a>\
+                        <ul class="dropdown-menu">\
+                            <li>\
+                                <a href="#">Dropdown 1</a>\
+                            </li>\
+                            <li>\
+                                <a href="#">Dropdown 2</a>\
+                            </li>\
+                            <li>\
+                                <a href="#">Dropdown 3</a>\
+                            </li>\
+                            <li>\
+                                <a href="#">Dropdown 4</a>\
+                            </li>\
+                        </ul>\
+                    </li>\
+                    <!--//dropdown-->\
+                    <li class="nav-item">\
+                        <a href="#">Contact</a>\
+                    </li>\
+                </ul>\
+                <!--//nav-->\
+            </div>\
+            <!--// End Navigation -->\
+        </div>\
+        <!--// End Container -->\
+    </nav>\
+    <!--// End Navbar -->\
+</header>';
+        comp_comp2.parent_selector = 'body';
+        f.addComponentType(comp_comp2);
+        
+        var comp_comp3 = new PgComponentType('comp3', 'Comp 3 / Div');
+        comp_comp3.code = '<nav class="main-nav navbar-fixed-top headroom headroom--pinned">\
+    <div class="container">\
+        <!-- Brand and toggle -->\
+        <div class="navbar-header">\
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">\
+                <span class="sr-only">Toggle navigation</span>\
+                <span class="icon-bar"></span>\
+                <span class="icon-bar"></span>\
+                <span class="icon-bar"></span>\
+            </button>\
+            <a href="#">\
+                <img src="images/biyahe-logo.png" class="brand-img img-responsive">\
+            </a>\
+        </div>\
+        <!-- Navigation -->\
+        <div class="collapse navbar-collapse">\
+            <ul class="nav navbar-nav navbar-right">\
+                <li class="active nav-item">\
+                    <a href="#biyaheUsers">Biyahe Users</a>\
+                </li>\
+                <li class="nav-item">\
+                    <a href="#clientUsers">Client Users</a>\
+                </li>\
+                <li class="nav-item">\
+                    <a id="" href="#utilities">Utilities</a>\
+                </li>\
+                <li class="nav-item dropdown">\
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Pages <i class="fa fa-angle-down"></i></a>\
+                    <ul class="dropdown-menu">\
+                        <li>\
+                            <a href="#">Dropdown 1</a>\
+                        </li>\
+                        <li>\
+                            <a href="#">Dropdown 2</a>\
+                        </li>\
+                        <li>\
+                            <a href="#">Dropdown 3</a>\
+                        </li>\
+                        <li>\
+                            <a href="#">Dropdown 4</a>\
+                        </li>\
+                    </ul>\
+                </li>\
+                <!--//dropdown-->\
+                <li class="nav-item">\
+                    <a href="#">Contact</a>\
+                </li>\
+            </ul>\
+            <!--//nav-->\
+        </div>\
+        <!--// End Navigation -->\
+    </div>\
+    <!--// End Container -->\
+</nav>';
+        comp_comp3.parent_selector = null;
+        f.addComponentType(comp_comp3);
+        
+        //Tell Pinegrow about the framework
+        pinegrow.addFramework(f);
+            
+        var section = new PgFrameworkLibSection("header 3_lib", "Components");
+        //Pass components in array
+        section.setComponentTypes([comp_comp1, comp_comp2, comp_comp3]);
+
+        f.addLibSection(section);
+   });
+});

@@ -1,0 +1,16 @@
+/* Create Properties */
+.cont-menu{
+  padding: 18px;
+}
+.margin-btm{
+  margin-bottom: 15px;
+}
+.forgot-pass{
+  color: #fff;
+  font-size: .90em;
+}
+@media only screen and (min-width : 1200px) {
+  .cont-menu{
+    width: 250px;
+  }
+}

@@ -1,0 +1,51 @@
+/* Create Properties */
+.gallery-thumb{
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  box-shadow: 0 8px 8px -6px rgba(93, 93, 93, 0.54);
+}
+.checkbox-margin{
+  margin-top: 20px;
+  padding-left: 0;
+}
+table tr{
+  cursor: pointer;
+}
+div.container-fluid.no-padding{
+  padding: 25px 0 0 0;
+}
+.no-margin-btm{
+  margin-bottom: 0;
+}
+@media (max-device-width: 480px){
+  #biyaheUsers .gallery-details > h5, #clientUsers .gallery-details > h5{
+    font-size: 12px;
+  }
+  button.pull-right.create-btn{
+    font-size: 10px;
+    width: 125%;
+    padding: 0 !important;
+  }
+  h2.text-center{
+    font-size: 2.0rem;
+  }
+}
+@media (min-width: 768px){
+  button.pull-right.create-btn{
+    padding: 0;
+    text-align: center;
+  }
+  h2.text-center{
+    font-size: 2.0rem;
+  }
+}
+@media (max-device-width: 480px) and (orientation: landscape){
+  button.pull-right.create-btn{
+    font-size: 10px;
+    width: 125%;
+    padding: 0;
+  }
+  h2.text-center{
+    font-size: 2.0rem;
+  }
+}

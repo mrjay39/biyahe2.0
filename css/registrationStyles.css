@@ -1,0 +1,69 @@
+/* Create Properties */
+#registerUser .form-control{
+  border: 1px solid #ccc;
+}
+.cont-border{
+  border: 1px solid #ccc;
+  padding-top: 25px;
+  border-radius: 5px;
+}
+.noresize{
+  resize: none;
+}
+.btn-cancel, .btn-reg{
+  margin-right: 15px;
+}
+.margin-top{
+  padding-top: 30px;
+}
+.header{
+  color      : #333;
+  font-weight: bold;
+}
+.gender>label{
+  margin-left: 10px;
+}
+.multiple-btn button{
+  text-align: center;
+  width: 35%;
+}
+.checkbox-margin{
+  margin-top: 20px !important;
+}
+.glyicon-home{
+  padding: 0;
+}
+.glyicon-home > button{
+  width: 70% !important;
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .move-left{
+    left: 20%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .checkbox-margin{
+    left: 12%;
+  }
+}
+@media (max-device-width: 480px){
+  .btn-cancel, .btn-reg{
+    font-size: 12px;
+    padding: 16px 0;
+  }
+  .header{
+    font-size: 18px;
+  }
+  .checkbox-margin{
+    left: 12%;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .checkbox-margin{
+    left: 12%;
+  }
+}
