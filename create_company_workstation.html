@@ -2,7 +2,7 @@
 <html lang="en" style="height:100%;">
     <head>
         <meta charset="utf-8">
-        <title>Biyahe: Create a Company Branch</title>
+        <title>Biyahe: Create a Company Workstation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="pinegrow, blocks, bootstrap" />
         <meta name="description" content="My new website" />
@@ -160,7 +160,7 @@
             <div class="container">
                 <div class="row">
                     <form id="registerUser" data-toggle="validator" role="form" class="form-horizontal container">
-                        <h2 class="header text-center">Company Branch Registration</h2>
+                        <h2 class="header text-center">Company Workstation Registration</h2>
                         <div class="col-md-10 col-md-offset-1 cont-border">
                             <div class="form-group">
                                 <label for="selCompany" class="col-md-4 col-sm-4 control-label">Company</label>
@@ -178,9 +178,9 @@
                                 <div class="col-md-6 col-sm-6">
                                     <select id="selRegion" class="selectpicker form-control">
                                         <option value="">Select Region</option>
-                                        <option value="jg">Region 1</option>
-                                        <option value="js">Region 2</option>
-                                        <option value="ck">Region 3</option>
+                                        <option value="rgn1">Region 1</option>
+                                        <option value="rgn2">Region 2</option>
+                                        <option value="rgn3">Region 3</option>
                                     </select>
                                 </div>
                             </div>
@@ -189,9 +189,9 @@
                                 <div class="col-md-6 col-sm-6">
                                     <select id="selArea" class="selectpicker form-control">
                                         <option value="">Select Area</option>
-                                        <option value="jg">Luzon</option>
-                                        <option value="js">Visayas</option>
-                                        <option value="ck">Mindanao</option>
+                                        <option value="luz">Luzon</option>
+                                        <option value="vis">Visayas</option>
+                                        <option value="min">Mindanao</option>
                                     </select>
                                 </div>
                             </div>
@@ -200,116 +200,38 @@
                                 <div class="col-md-6 col-sm-6">
                                     <select id="selLocation" class="selectpicker form-control">
                                         <option value="">Select Location</option>
-                                        <option value="jg">Davao</option>
-                                        <option value="js">Cebu</option>
-                                        <option value="ck">Palawan</option>
+                                        <option value="dvo">Davao</option>
+                                        <option value="ceb">Cebu</option>
+                                        <option value="pps">Palawan</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="txtName" class="col-md-4 col-sm-4 control-label">Branch Name</label>
+                                <label for="selLocation" class="col-md-4 col-sm-4 control-label">Branch</label>
                                 <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-university"></i></span>
-                                        <input name="name" id="txtName" type="text" required class="form-control" />
-                                    </div>
+                                    <select id="selLocation" class="selectpicker form-control">
+                                        <option value="">Select Branch</option>
+                                        <option value="bh">Buhangin</option>
+                                        <option value="bj">Bajada</option>
+                                        <option value="ag">Agdao</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="txtCode" class="col-md-4 col-sm-4 control-label">Branch Code</label>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-code "></i></span>
-                                        <input name="code" type="text" id="txtCode" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 col-xs-3 col-sm-4 control-label">Type</label>
-                                <div class="btn-group col-md-8 col-xs-8 col-sm-8">
-                                    <div class="btn-group col-md-12 col-xs-12 gender radio radio-warning">
-                                        <div class="col-md-4 col-xs-6">
-                                            <input type="radio" name="owned" id="optOwned" value="option1" checked />
-                                            <label for="optOwned">Owner</label>
-                                        </div>
-                                        <div class="col-md-4 col-xs-6">
-                                            <input type="radio" name="franchised" id="optFranchised" value="option2" />
-                                            <label for="optFranchised">Franchised</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="txtMarkup" class="col-md-4 col-sm-4 control-label">Mark Up</label>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-arrow-up"></i></span>
-                                        <input name="markup" id="txtMarkup" type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="txtBranchWarningLevel" class="col-md-4 col-sm-4 control-label">Branch Warning Level</label>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-exclamation"></i></span>
-                                        <input name="branchWarningLevel" id="txtBranchWarningLevel" type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="txtPublicIpAddress" class="col-md-4 col-sm-4 control-label">Public IP Address</label>
+                                <label for="txtPhysicalAddress" class="col-md-4 col-sm-4 control-label">Physical Address</label>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
-                                        <input name="publicIpAddress" id="txtPublicIpAddress" type="text" class="form-control" />
+                                        <input name="physicalAddress" id="txtPhysicalAddress" type="text" class="form-control" />
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="txtAddress" class="col-md-4 col-sm-4 control-label">Address</label>
+                                <label for="txtOtherInfo" class="col-md-4 col-sm-4 control-label">Other Information</label>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="input-group">
-                                      <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
-                                      <textarea name="address" id="txtAddress" type="text" class="form-control noresize"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="txtCity" class="col-md-4 col-sm-4 control-label">City</label>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-university"></i></span>
-                                        <input name="city" id="txtCity" type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="txtZipCode" class="col-md-4 col-sm-4 control-label">Zip Code</label>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-archive"></i></span>
-                                        <input name="zipCode" id="txtZipCode" type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="txtContactNumber" class="col-md-4 col-sm-4 control-label">Contact Number</label>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-hashtag"></i></span>
-                                        <input name="contact" id="txtContactNumber" type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 col-xs-6 col-sm-4 control-label" for="chkMacSecurity">MAC Security</label>
-                                <div class="btn-group col-md-8 col-xs-6 col-sm-8">
-                                    <div class="btn-group col-md-12 col-xs-12 gender checkbox checkbox-warning">
-                                        <div class="col-md-4 col-xs-6">
-                                            <input type="checkbox" name="useMacSecurity" id="chkMacSecurity" value="option2" />
-                                            <label for="chkMacSecurity">Enable</label>
-                                        </div>
+                                      <span class="input-group-addon"><i class="fa fa-comment"></i></span>
+                                      <textarea name="otherInfo" id="txtOtherInfo" type="text" class="form-control noresize"></textarea>
                                     </div>
                                 </div>
                             </div>
