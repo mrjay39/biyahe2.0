@@ -17,6 +17,9 @@ div.container-fluid.no-padding{
 .no-margin-btm{
   margin-bottom: 0;
 }
+.vertical-center{
+  margin: 0 !important;
+}
 @media (max-device-width: 480px){
   #biyaheUsers .gallery-details > h5, #clientUsers .gallery-details > h5{
     font-size: 12px;

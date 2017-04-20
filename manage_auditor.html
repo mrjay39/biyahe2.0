@@ -29,134 +29,161 @@
         <header id="header-1" class="soft-scroll header-1">
             <!-- Navbar -->
             <nav class="main-nav navbar-fixed-top headroom headroom--pinned">
-                <div class="container-fluid">
-                    <!-- Brand and toggle -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a href="#">
-                            <img src="images/biyahe-logo.png" class="brand-img img-responsive">
-                        </a>
-                    </div>
-                    <!-- Navigation -->
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active nav-item Dropdown">
-                                <a href="#biyaheUsers" class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" data-close-others="false">Biyahe Users <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">Finance Admin</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Fulfillment Officer</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Auditor</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Top-up Officer</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Ticket Support</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Cancellation Clerk</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Baggage Clerk</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#biyaheUsers" class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" data-close-others="false">Client Users <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">Company Admin</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Finance Officer</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sales Manager</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Region Manager</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Area Manager</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Location Manager</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Branch Owner</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Branch Head</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Ticketing Agent</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" data-close-others="false" href="#">Utilities <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">Company</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Region</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Area</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Location</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Branch</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Workstation</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Web Service</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <!-- Login Container -->
-                            <li class="dropdown" id="menuLogin">
-                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
-                                <div class="dropdown-menu cont-menu">
-                                    <form class="form" id="formLogin">
-                                        <div class="input-group margin-btm">
-                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                            <input name="contactNumber" type="text" class="form-control" placeholder="Username" />
-                                        </div>
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                            <input name="contactNumber" type="text" class="form-control" placeholder="Password" />
-                                        </div>
-                                        <button type="button" id="btnLogin" class="btn btn-warning">Login</button>
-                                    </form>
-                                    <span data-toggle="modal" class="forgot-pass" role="button" href="#forgotPasswordModal">Forgot username or password?</span>
-                                </div>
-                            </li>
-                            <!-- End: login Container -->
-
-                        </ul>
-                        <!--//nav-->
-                    </div>
-                    <!--// End Navigation -->
-                </div>
-                <!--// End Container -->
-            </nav>
+    <div class="container">
+        <!-- Brand and toggle -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#">
+                <img src="images/biyahe-logo.png" class="brand-img img-responsive">
+            </a>
+        </div>
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="glyphicon glyphicon-home"></i></a></li>
+                <li class="dropdown">
+                    <a href="#biyaheUsers" data-toggle="dropdown" data-hover="dropdown">Accounts &nbsp;<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu display-left">
+                            <a data-toggle="dropdown" data-submenu="">Load Adjustment &nbsp;<i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu left-display">
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Web Service</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu display-left">
+                            <a href="#">Load Requests &nbsp;<i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu left-display">
+                                <li><a href="#">Company</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#biyaheUsers" data-toggle="dropdown" data-hover="dropdown">Reports &nbsp;<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu display-left">
+                            <a data-toggle="dropdown" data-submenu="">Reloads &nbsp;<i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu left-display">
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Branch</a></li>
+                                <li><a href="#">Web Service</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu display-left">
+                            <a data-toggle="dropdown" data-submenu="">Transactions Count &nbsp;<i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu left-display">
+                                <li><a href="#">Region</a></li>
+                                <li><a href="#">area</a></li>
+                                <li><a href="#">Location</a></li>
+                                <li><a href="#">Branch</a></li>
+                                <li><a href="#">Agent</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu display-left">
+                            <a href="#">Flight Transactions &nbsp;<i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu left-display">
+                                <li><a href="#">Biyahe</a></li>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Region</a></li>
+                                <li><a href="#">Area</a></li>
+                                <li><a href="#">Location</a></li>
+                                <li><a href="#">Branch</a></li>
+                                <li><a href="#">Agent</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu display-left">
+                            <a href="#">Sales &nbsp;<i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu left-display">
+                                <li><a href="#">Biyahe Sales</a></li>
+                                <li><a href="#">Company Sales</a></li>
+                                <li><a href="#">Region Sales</a></li>
+                                <li><a href="#">Area Sales</a></li>
+                                <li><a href="#">Location Sales</a></li>
+                                <li><a href="#">Branch Sales</a></li>
+                                <li><a href="#">Agent Sales</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu display-left">
+                            <a href="#">Ledgers &nbsp;<i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu left-display">
+                                <li><a href="#">Company Distribution</a></li>
+                                <li><a href="#">Company Ticket Usage</a></li>
+                                <li><a href="#">Branch Usage</a></li>
+                                <li><a href="#">Web Service</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu display-left">
+                            <a href="#">Refunds &nbsp;<i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu left-display">
+                                <li><a href="#">Served</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Unticketed Reservations</a>
+                        </li>
+                        <li>
+                            <a href="#">Voided Bookings</a>
+                        </li>
+                        <li>
+                            <a href="#">Agent Reports</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Login Container -->
+                <li class="dropdown" id="menuLogin">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" data-close-others="false" href="#">
+                        <i class="fa fa-user"></i>&nbsp;
+                        <span>Juan dela Cruz</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-user"></i>&nbsp;
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-lock"></i>&nbsp;
+                                <span>Change Password</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-log-out"></i>&nbsp;
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a> -->
+                    <!-- <div class="dropdown-menu cont-menu">
+                        <form class="form" id="formLogin">
+                            <div class="input-group margin-btm">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="contactNumber" type="text" class="form-control" placeholder="Username" />
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input name="contactNumber" type="text" class="form-control" placeholder="Password" />
+                            </div>
+                            <button type="button" id="btnLogin" class="btn btn-warning">Login</button>
+                        </form>
+                        <span data-toggle="modal" class="forgot-pass" role="button" href="#forgotPasswordModal">Forgot username or password?</span>
+                    </div> -->
+                </li>
+            </ul>
+            <!--//nav-->
+        </div>
+        <!--// End Navigation -->
+    </div>
+    <!--// End Container -->
+</nav>
             <!--// End Navbar -->
         </header>
         <section class="content-block gallery-1 gallery-1-1">
@@ -182,7 +209,7 @@
                                     <td>Juana Marie Dela Cruz</td>
                                     <td>finance@biyahe.com</td>
                                     <td>+639876543210</td>
-                                    <td><i class="glyphicon glyphicon-eye-open"></i></td>
+                                    <td><a onlick"href='http://dev.biyahe.com.ph'" id="1"><i class="glyphicon glyphicon-eye-open"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>002</td>
@@ -190,7 +217,7 @@
                                     <td>Juana Marie Dela Cruz</td>
                                     <td>finance@biyahe.com</td>
                                     <td>+639876543210</td>
-                                    <td><i class="glyphicon glyphicon-eye-open"></i></td>
+                                    <td><a href="#" id="2"><i class="glyphicon glyphicon-eye-open"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>003</td>
@@ -198,7 +225,7 @@
                                     <td>Juana Marie Dela Cruz</td>
                                     <td>finance@biyahe.com</td>
                                     <td>+639876543210</td>
-                                    <td><i class="glyphicon glyphicon-eye-open"></i></td>
+                                    <td><a href="#" id="3"><i class="glyphicon glyphicon-eye-open"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>004</td>
@@ -206,7 +233,7 @@
                                     <td>Juana Marie Dela Cruz</td>
                                     <td>finance@biyahe.com</td>
                                     <td>+639876543210</td>
-                                    <td><i class="glyphicon glyphicon-eye-open"></i></td>
+                                    <td><a href="#" id="4"><i class="glyphicon glyphicon-eye-open"></i></a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -282,6 +309,15 @@
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/materialize.js"></script>
         <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
-        <script type="text/javascript" src="js/bskit-scripts.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#responsive a').parent().parent().on('click', function(){
+                    var viewIconId = $(this).find('a').attr('id');
+                    var url = $('#'+viewIconId).attr('href');
+                    alert(url);
+                });
+            });
+        </script>
     </body>
 </html>

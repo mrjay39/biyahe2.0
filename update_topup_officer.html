@@ -131,8 +131,32 @@
                             </li>
                             <!-- Login Container -->
                             <li class="dropdown" id="menuLogin">
-                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
-                                <div class="dropdown-menu cont-menu">
+                                <a class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" data-close-others="false" href="#">
+                                    <i class="fa fa-user"></i>&nbsp;
+                                    <span>Juan dela Cruz</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="glyphicon glyphicon-user"></i>&nbsp;
+                                            <span>My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="glyphicon glyphicon-lock"></i>&nbsp;
+                                            <span>Change Password</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="glyphicon glyphicon-log-out"></i>&nbsp;
+                                            <span>Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a> -->
+                                <!-- <div class="dropdown-menu cont-menu">
                                     <form class="form" id="formLogin">
                                         <div class="input-group margin-btm">
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -145,7 +169,7 @@
                                         <button type="button" id="btnLogin" class="btn btn-warning">Login</button>
                                     </form>
                                     <span data-toggle="modal" class="forgot-pass" role="button" href="#forgotPasswordModal">Forgot username or password?</span>
-                                </div>
+                                </div> -->
                             </li>
                         </ul>
                         <!--//nav-->
@@ -162,99 +186,99 @@
                     <form id="registerUser" data-toggle="validator" role="form" class="form-horizontal container">
                         <h2 class="header text-center">Update Top-up Officer Details</h2>
                         <div class="col-md-10 col-md-offset-1 cont-border">
-                            <div class="form-group">
-                                <label for="fisrtName" class="col-md-4 col-sm-4 control-label">First Name</label>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input name="firstName" id="firstName" type="text" required class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName" class="col-md-4 col-sm-4 control-label">Last Name</label>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input name="lastName" type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="middleName" class="col-md-4 col-sm-4 control-label">Middle Name</label>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input name="middleName" type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="middleName" class="col-md-4 col-sm-4 control-label">Gender</label>
-                                <div class="btn-group col-md-6 col-sm-6">
-                                    <div class="btn-group col-md-6 col-sm-4 gender radio radio-warning">
-                                      <input type="radio" name="gender" id="male" value="option1" />
-                                      <label for="male">Male</label>
-                                    </div>
-                                    <div class="btn-group col-md-6 col-sm-4 gender radio radio-warning">
-                                      <input type="radio" name="gender" id="female" value="option2" checked />
-                                      <label for="female">Female</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="address" class="col-md-4 col-sm-4 control-label">Address</label>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                      <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
-                                      <textarea name="address" type="text" class="form-control noresize"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="col-md-4 col-sm-4 control-label">Email Address</label>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                        <input name="email" type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="contactNumber" class="col-md-4 col-sm-4 control-label">Contact Number</label>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-                                        <input name="contactNumber" type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="idNumber" class="col-md-4 col-sm-4 control-label">ID Number</label>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="icon-large icon-keys"></i></span>
-                                        <input name="idNumber" type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row multiple-btn">
-                                <div class="col-md-4 col-xs-12 col-sm-6">
-                                    <div class="col-xs-6 col-md-6 glyicon-home">
-                                        <button title="back to home page" class="btn btn-primary btn-lg btn-reg">
-                                            <i class="glyphicon glyphicon-home"></i>
-                                        </button>
-                                    </div>
-                                    <div class="checkbox checkbox-warning col-xs-6 col-md-6 checkbox-margin">
-                                        <input id="deactivate" type="checkbox" />
-                                        <label for="deactivate">Deactivate</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-xs-12 col-sm-6 pull-right">
-                                    <button class="btn btn-primary btn-lg btn-cancel col-xs-4 col-md-2 pull-right">Cancel</button>
-                                    <button class="btn btn-primary btn-lg btn-reg col-xs-4 col-md-2 move-left">Save</button>
-                                </div>
-                            </div>
+                          <div class="form-group">
+                              <label for="txtName" class="col-md-4 col-sm-4 control-label">First Name</label>
+                              <div class="col-md-6 col-sm-6">
+                                  <div class="input-group">
+                                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                      <input name="name" id="txtName" type="text" required class="form-control" />
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="txtLastName" class="col-md-4 col-sm-4 control-label">Last Name</label>
+                              <div class="col-md-6 col-sm-6">
+                                  <div class="input-group">
+                                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                      <input id="txtLastName" name="lastName" type="text" class="form-control" />
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="txtMiddleName" class="col-md-4 col-sm-4 control-label">Middle Name</label>
+                              <div class="col-md-6 col-sm-6">
+                                  <div class="input-group">
+                                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                      <input id="txtMiddleName" name="middleName" type="text" class="form-control" />
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="middleName" class="col-md-4 col-sm-4 control-label">Gender</label>
+                              <div class="btn-group col-md-6 col-sm-6">
+                                  <div class="btn-group col-md-6 col-sm-4 gender radio radio-warning">
+                                    <input type="radio" name="gender" id="male" value="option1" />
+                                    <label for="male">Male</label>
+                                  </div>
+                                  <div class="btn-group col-md-6 col-sm-4 gender radio radio-warning">
+                                    <input type="radio" name="gender" id="female" value="option2" checked />
+                                    <label for="female">Female</label>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="txtAddress" class="col-md-4 col-sm-4 control-label">Address</label>
+                              <div class="col-md-6 col-sm-6">
+                                  <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                                    <textarea id="txtAddress" name="address" type="text" class="form-control noresize"></textarea>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="txtEmail" class="col-md-4 col-sm-4 control-label">Email Address</label>
+                              <div class="col-md-6 col-sm-6">
+                                  <div class="input-group">
+                                      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                      <input id="txtEmail" name="email" type="text" class="form-control" />
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="txtContactNumber" class="col-md-4 col-sm-4 control-label">Contact Number</label>
+                              <div class="col-md-6 col-sm-6">
+                                  <div class="input-group">
+                                      <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                                      <input id="txtContactNumber" name="contactNumber" type="text" class="form-control" />
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="txtIdNumber" class="col-md-4 col-sm-4 control-label">ID Number</label>
+                              <div class="col-md-6 col-sm-6">
+                                  <div class="input-group">
+                                      <span class="input-group-addon"><i class="fa fa-hashtag"></i></span>
+                                      <input id="txtIdNumber" name="idNumber" type="text" class="form-control" />
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row multiple-btn">
+                              <div class="col-md-4 col-xs-12 col-sm-6">
+                                  <div class="col-xs-6 col-md-6 glyicon-home">
+                                      <button title="back to home page" class="btn btn-primary btn-lg btn-reg">
+                                          <i class="glyphicon glyphicon-home"></i>
+                                      </button>
+                                  </div>
+                                  <div class="checkbox checkbox-warning col-xs-6 col-md-6 checkbox-margin">
+                                      <input id="deactivate" type="checkbox" />
+                                      <label for="deactivate">Deactivate</label>
+                                  </div>
+                              </div>
+                              <div class="col-md-8 col-xs-12 col-sm-6 pull-right">
+                                  <button class="btn btn-primary btn-lg btn-cancel col-xs-4 col-md-2 pull-right">Cancel</button>
+                                  <button class="btn btn-primary btn-lg btn-reg col-xs-4 col-md-2 move-left">Save</button>
+                              </div>
+                          </div>
                         </div>
                     </form>
                 </div>

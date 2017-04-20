@@ -9,6 +9,19 @@
   color: #fff;
   font-size: .90em;
 }
+.dropdown-menu.left-display{
+  right: 0 !important;
+  left: 100% !important;
+}
+.dropdown-menu.left-display::before{
+  border-bottom: none !important;
+}
+.dropdown-submenu.display-left>a:after{
+  border: none !important;
+}
+#formLogin .form-control, #formLogin  .input-group-addon{
+  background-color: #fff;
+}
 @media only screen and (min-width : 1200px) {
   .cont-menu{
     width: 250px;

@@ -6649,10 +6649,10 @@ nav ul a span.badge {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 90%;
+  /*width: 90%;*/
 }
 
-@media only screen and (min-width: 601px) {
+/*@media only screen and (min-width: 601px) {
   .container {
     width: 85%;
   }
@@ -6662,7 +6662,7 @@ nav ul a span.badge {
   .container {
     width: 70%;
   }
-}
+}*/
 
 .container .row {
   margin-left: -0.75rem;
@@ -8683,7 +8683,7 @@ label {
   color: #d1d1d1;
 }
 
-input:not([type]),
+/*input:not([type]),
 input[type=text],
 input[type=password],
 input[type=email],
@@ -8708,7 +8708,7 @@ textarea.materialize-textarea {
   box-shadow: none;
   box-sizing: content-box;
   transition: all .3s;
-}
+}*/
 
 input:not([type]):disabled, input:not([type])[readonly="readonly"],
 input[type=text]:disabled,
@@ -9110,8 +9110,8 @@ textarea.materialize-textarea {
 
 [type="radio"]:checked + label:after {
   border-radius: 50%;
-  border: 2px solid #26a69a;
-  background-color: #26a69a;
+  border: 2px solid #f1c40f;
+  background-color: #f1c40f;
   z-index: 0;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
